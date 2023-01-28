@@ -1,13 +1,146 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container1 {
+    display: flex;
+    justify-content: space-between;
+}
+.hero {
+    margin-top: 3.5rem;
+}
+.text1 {
+    font-size: 13px;
+    color: rgb(208, 218, 251);
+    word-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    letter-spacing: 2px;
+}
+.text2 {
+    font-size: 90px;
+    color: white;
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: -0.2rem;
+    font-family: 'PT Serif', serif;
+}
+.text3 {
+    font-size: 19px;
+    color: rgb(208, 218, 251);
+    text-align: center;
+    margin-top: 2rem; 
+}
+.text4 {
+    font-size: 23px;
+    text-align: center;
+    background-color: white;
+    border-radius: 100%; 
+    padding: 60px 40px; 
+}
+.sub-container2 {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    margin-top: 10rem;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 8px;
+    margin-right: 2rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.links {
+    display: none;
+    margin-top: -1.3rem;
+    padding: 1.7rem 0rem 0rem 2rem;
+}
+
+@media (min-width: 576px) {
+    .links{
+        display: block;
+        background-color: rgb(38, 38, 54);
+    }
+    .hamburger {
+        display: none;
+    }
+    .hero {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        padding: 10px 40px 10px 20px;
+    }
+    .text3{
+        width: 70%;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+@media (min-width: 769px) {
+    .links{
+        display: block;
+        background-color: rgb(38, 38, 54);
+        width: 40%;
+        padding-left: 100px;
+        filter: blur(8px);
+  -webkit-filter: blur(8px);
+    }
+
+    .hero {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 150px 0px 100px;
+    }
+
+    .sub-container1 {
+        margin-top: 8rem;
+    }
+    .text1 {
+        text-align: left;
+    }
+    .text2 {
+        text-align: left;
+    }
+    .text3{
+        width: 40%;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: left;
+        margin-top: 0.8rem;
+    }
+
+    .text4 {
+        font-size: 23px;
+        text-align: center;
+        background-color: white;
+        border-radius: 100%; 
+        padding: 60px 40px; 
+    }
+    .sub-container2 {
+        height: 20vh;
+        width: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        place-items: center;
+        margin-top: 10rem;
+    }
 }

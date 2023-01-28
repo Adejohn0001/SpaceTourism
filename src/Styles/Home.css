@@ -1,0 +1,22 @@
+body{
+    background-image: url("../assets/home/background-home-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    padding: 20px;
+}
+
+@media (min-width: 576px) {
+    body {
+        background-image: url("../assets/home/background-home-tablet.jpg");
+        padding: 20px 0px 20px 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        background-image: url("../assets/home/background-home-desktop.jpg");
+        height: 90vh;
+        background-size:auto;
+    }
+}
