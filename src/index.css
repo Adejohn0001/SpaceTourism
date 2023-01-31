@@ -53,7 +53,7 @@
     place-items: center;
     margin-top: 10rem;
 }
-ul{
+.list1{
     display: flex;
     list-style-type: none;
 }
@@ -69,6 +69,61 @@ a{
     display: none;
     margin-top: -1.3rem;
     padding: 1.7rem 0rem 0rem 2rem;
+}
+
+.mars-image{
+    width: 80%;
+    padding: 0rem 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+}
+.mars {
+    font-size: 70px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'PT Serif', serif; 
+    margin-top: 1.5rem;
+}
+
+.mars-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+}
+
+.unordered1 {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    list-style-type: none;
+}
+.dest-text {
+    color:  rgb(194, 203, 233);
+    font-size: 14px;
+    margin: 1rem 0rem 3rem;
+    width: 81.5%;
+}
+
+.avg-amt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 24px 100px 20px 0px;
+    margin: 0 auto;
+}
+.avg {
+    color:  rgb(194, 203, 233);
+    font-size: 9px;
+    text-transform: uppercase; 
+    margin-bottom: 0.5rem;
+}
+.amt {
+    color:  rgb(230, 236, 253);
+    font-size: 18px;
+    text-transform: uppercase; 
+    margin-bottom: 2rem;
 }
 
 @media (min-width: 576px) {
@@ -159,4 +214,48 @@ a{
         place-items: center;
         margin-top: 10rem;
     }
+
+    .mars-image{
+        width: 60%;
+        padding: 0rem 2.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0rem;
+        margin-right: 40%
+    }
+
+    .dest-text {
+        margin: 1rem 0rem 3rem;
+        width: 81.5%;
+    }
+    
+    .avg-amt {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 24px 100px 20px 0px;
+        margin: 0 auto;
+    }
+    .avg {
+        color:  rgb(194, 203, 233);
+        font-size: 9px;
+        text-transform: uppercase; 
+        margin-bottom: 0.5rem;
+    }
+    .amt {
+        color:  rgb(230, 236, 253);
+        font-size: 18px;
+        text-transform: uppercase; 
+        margin-bottom: 2rem;
+    }
+    hr {
+        width: 90%
+    }
+};
+
+
+
+/* for destination */
+.d {
+    background-image: url('./assets/destination/background-destination-mobile.jpg');
+    background-color: black;
 }

@@ -5,7 +5,7 @@ import '../Styles/Home.css'
 
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
       <Nav />
       <Hero />
     </div>

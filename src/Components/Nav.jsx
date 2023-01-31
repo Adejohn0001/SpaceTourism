@@ -1,6 +1,9 @@
 import React from 'react'
 import logo from '../assets/shared/logo.svg'
 import hamburger from '../assets/shared/icon-hamburger.svg'
+import {
+  Link
+} from 'react-router-dom'
 
 const Nav = () => {
   return (
@@ -12,11 +15,19 @@ const Nav = () => {
         {/** this is for the nav links */}
         <div className='links'>
           <div className='sublink1'></div>
-          <ul>
-            <li><a href='home'>Home</a></li>
-            <li><a href="destination">Destination</a></li>
-            <li><a href="crew">Crew</a></li>
-            <li><a href='tech'>Technology</a></li>
+          <ul className='list1'>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/destination">Destination</Link>
+            </li>
+            <li>
+              <Link to="/crew">Crew</Link>
+            </li>
+            <li>
+              <Link to='/technology'>Technology</Link>
+            </li>
           </ul>
         </div>
 
