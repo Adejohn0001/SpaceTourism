@@ -4,6 +4,7 @@ body {
     background-size: cover;
     height: 170vh;
     padding: 20px;
+    background-position: center;
 }
 span {
     color: aliceblue;

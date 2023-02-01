@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '../assets/shared/logo.svg'
-import hamburger from '../assets/shared/icon-hamburger.svg'
 import {
   Link
 } from 'react-router-dom'
+import close from '../assets/shared/icon-close.svg';
+import hamburger from '../assets/shared/icon-hamburger.svg';
 
 const Nav = () => {
+  const [open,setOpen] = useState(false)
+
+  const seeMenu = () => {
+    setOpen(!open)
+  }
   return (
     <div className='container1'>
         <div>
@@ -15,7 +21,11 @@ const Nav = () => {
         {/** this is for the nav links */}
         <div className='links'>
           <div className='sublink1'></div>
+          <nav className={open ? 'slider open': 'slider'}>
           <ul className='list1'>
+            <div>
+              <img src={close} alt="close" srcset="" className='close' onClick={seeMenu}/>
+            </div>
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -29,11 +39,12 @@ const Nav = () => {
               <Link to='/technology'>Technology</Link>
             </li>
           </ul>
+          </nav>
         </div>
 
         <div className='hamburger'>
-            <img src={hamburger} alt="" srcset="" />
-        </div>
+           <img src={hamburger} alt="" srcset="" onClick={seeMenu}/>
+        </div> 
     </div>
   )
 }

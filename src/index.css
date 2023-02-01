@@ -126,6 +126,46 @@ a{
     margin-bottom: 2rem;
 }
 
+.nav-link {
+    color:  rgb(221, 228, 250);
+    color: white;
+}
+.nav-link:active {
+    color: white;
+}
+
+.nav-link:hover {
+    transform: translateX(-2px);
+},
+.active{
+    color: white;
+}
+
+  
+  .active {
+    border-bottom: 3px solid white;
+    transition: border-bottom .10s ease-in-out;
+  }
+  .slider {
+    position: fixed;
+    min-width: 100%;
+    height: 100vh;
+    top: -100%;
+    background-color: blue;
+  }
+  .slider ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .slider ul li {
+    margin-block: 2.5rem;
+  }
+.slider.open {
+    top: 0;
+}
+
 @media (min-width: 576px) {
     .links{
         display: block;
@@ -155,6 +195,9 @@ a{
         font-size: 14px;
         line-height: 22px;
     }
+    .close {
+        display: none;
+    }
 }
 
 @media (min-width: 769px) {
@@ -163,8 +206,8 @@ a{
         background-color: rgb(38, 38, 54);
         width: 40%;
         padding-left: 100px;
-        filter: blur(8px);
-  -webkit-filter: blur(8px);
+        /*filter: blur(8px);
+  -webkit-filter: blur(8px);*/
     }
 
     .hero {

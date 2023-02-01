@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    Link
+    NavLink
 } from 'react-router-dom'
 
 const DestNav = () => {
@@ -10,16 +10,43 @@ const DestNav = () => {
           <div className='sublink01'></div>
           <ul className='unordered1'>
             <li>
-              <Link to="/moon">Moon</Link>
+              <NavLink to="/moon"
+               activeClassName="active"
+               className="nav-link"
+               >
+                Moon
+              </NavLink>
             </li>
+            
             <li>
-              <Link to="/destination">Mars</Link>
+              <NavLink 
+              exact 
+              activeClassName="active"
+              className="nav-link"
+              to="/destination"
+              >
+                Mars
+              </NavLink>
             </li>
+
             <li>
-              <Link to="/europa">Europa</Link>
+              <NavLink 
+              activeClassName="active"
+              className="nav-link"
+              to="/europa"
+              >
+                Europa
+              </NavLink>
             </li>
+
             <li>
-              <Link to='/titan'>Titan</Link>
+              <NavLink
+              activeClassName="active"
+              className="nav-link"
+              to='/titan'
+              >
+                Titan
+              </NavLink>
             </li>
           </ul>
         </div>
