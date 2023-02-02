@@ -1,17 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import logo from '../assets/shared/logo.svg'
 import {
-  Link
+  NavLink
 } from 'react-router-dom'
 import close from '../assets/shared/icon-close.svg';
 import hamburger from '../assets/shared/icon-hamburger.svg';
 
 const Nav = () => {
-  const [open,setOpen] = useState(false)
-
-  const seeMenu = () => {
-    setOpen(!open)
-  }
   return (
     <div className='container1'>
         <div>
@@ -21,29 +16,56 @@ const Nav = () => {
         {/** this is for the nav links */}
         <div className='links'>
           <div className='sublink1'></div>
-          <nav className={open ? 'slider open': 'slider'}>
+          <nav className="">
           <ul className='list1'>
             <div>
-              <img src={close} alt="close" srcset="" className='close' onClick={seeMenu}/>
+              <img src={close} alt="close" srcset="" className='close'/>
             </div>
             <li>
-              <Link to="/">Home</Link>
+              <NavLink 
+              exact
+              to="/"
+              activeClassName="active"
+              className="nav-link"
+              >
+                Home
+              </NavLink>
             </li>
+
             <li>
-              <Link to="/destination">Destination</Link>
+              <NavLink to="/destination"
+              activeClassName="active"
+              className="nav-link"
+              >
+                Destination
+              </NavLink>
             </li>
+
             <li>
-              <Link to="/crew">Crew</Link>
+              <NavLink to="/crew"
+              activeClassName="active"
+              className="nav-link"
+              >
+                Crew
+              </NavLink>
             </li>
+
             <li>
-              <Link to='/technology'>Technology</Link>
+              <NavLink to='/technology'
+              activeClassName="active"
+              className="nav-link"
+              >
+                Technology
+              </NavLink>
             </li>
+
           </ul>
+
           </nav>
         </div>
 
         <div className='hamburger'>
-           <img src={hamburger} alt="" srcset="" onClick={seeMenu}/>
+           <img src={hamburger} alt="" srcset=""/>
         </div> 
     </div>
   )

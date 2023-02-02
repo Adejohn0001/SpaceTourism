@@ -9,6 +9,7 @@ import {
 import Moon from './Components/Moon.jsx'
 import Europa from './Components/Europa';
 import Titan from './Components/Titan';
+import Crew from './Pages/Crew';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
          <Route exact path='/moon'element={<Moon />}></Route>
          <Route exact path='/europa'element={<Europa />}></Route>
          <Route exact path='/titan'element={<Titan />}></Route>
+         <Route exact path='/crew'element={<Crew />}></Route>
 
       </Routes>
     </Router>

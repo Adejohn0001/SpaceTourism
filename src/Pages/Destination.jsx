@@ -1,12 +1,12 @@
 import React from "react";
 import Nav from "../Components/Nav";
-import "../Styles/Destination.css";
 import DestNav from "../Components/DestNav.jsx";
+import '../Styles/Destination.css'
 import mars from "../assets/destination/image-mars.png";
 
 const Destination = () => {
   return (
-    <div className="destinations">
+    <div className="dest">
       <Nav />
 
       <div>

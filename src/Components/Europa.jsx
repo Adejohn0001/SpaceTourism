@@ -1,12 +1,12 @@
 import React from 'react'
 import europa from '../assets/destination/image-europa.png';
 import DestNav from './DestNav'
-import "../Styles/Destination.css";
 import Nav from "../Components/Nav";
+import '../Styles/Destination.css'
 
 const Europa = () => {
   return (
-    <div className="destinations">
+    <div className="dest">
       <Nav />
 
       <div>

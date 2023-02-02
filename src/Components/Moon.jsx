@@ -1,12 +1,12 @@
 import React from 'react'
 import moon from '../assets/destination/image-moon.png'
 import DestNav from './DestNav'
-import "../Styles/Destination.css";
+import '../Styles/Destination.css'
 import Nav from "../Components/Nav";
 
 const Moon = () => {
   return (
-    <div className="destinations">
+    <div className="dest">
       <Nav />
 
       <div>

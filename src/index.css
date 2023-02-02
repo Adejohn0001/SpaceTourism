@@ -165,6 +165,10 @@ a{
 .slider.open {
     top: 0;
 }
+.ansari {
+    display: flex;
+    width: 50%;
+}
 
 @media (min-width: 576px) {
     .links{
@@ -294,11 +298,3 @@ a{
         width: 90%
     }
 };
-
-
-
-/* for destination */
-.d {
-    background-image: url('./assets/destination/background-destination-mobile.jpg');
-    background-color: black;
-}
