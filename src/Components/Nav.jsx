@@ -1,19 +1,20 @@
 import React from 'react'
+import styled from 'styled-components'
 import logo from '../assets/shared/logo.svg'
-import {
-  NavLink
-} from 'react-router-dom'
-import close from '../assets/shared/icon-close.svg';
-import hamburger from '../assets/shared/icon-hamburger.svg';
+import Burger from './Burger'
 
+const StyledLogo = styled.div`
+margin-top: 0.5rem;
+`
 const Nav = () => {
   return (
     <div className='container1'>
-        <div>
-        <img src={logo} alt="logo" srcset="" />
-        </div>
+        <StyledLogo>
+        <img src={logo} alt="logo" srcset=""  />
+        </StyledLogo>
 
-        {/** this is for the nav links */}
+
+        {/** this is for the nav links 
         <div className='links'>
           <div className='sublink1'></div>
           <nav className="">
@@ -62,11 +63,11 @@ const Nav = () => {
           </ul>
 
           </nav>
-        </div>
+        </div> */}
 
-        <div className='hamburger'>
-           <img src={hamburger} alt="" srcset=""/>
-        </div> 
+        <div>
+          <Burger />
+        </div>
     </div>
   )
 }
