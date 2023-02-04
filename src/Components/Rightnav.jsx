@@ -7,14 +7,17 @@ import styled from 'styled-components';
 const Ul = styled.ul`
 display: flex;
 flex-direction: column;
-width: 67.5%;
+width: 70.5%;
 padding: 20px 150px 20px 100px;
 
 .background-color {
     background-color: rgb(38, 38, 54);
     width:100%;
     height:10vh;
-    margin-top:-2.3rem;
+    opacity: 0.4;
+    margin-top:-1rem;
+    filter: blur(10px);
+    
     padding:0rem 6.8rem 0rem 3rem;
 }
 li{
@@ -29,14 +32,17 @@ li{
     font-size:11px;
   }
   ul{
+    padding-left: 5rem; 
     position:relative;
+    margin-top:-2.5rem;
+    width: 60%;
   }
 
 @media (max-width: 769px) {
     padding: 40px 40px 40px 40px;
     background-color: rgb(38, 38, 54);
     margin-top: -1.5rem;
-    width: 79.5%;
+    width: 79.3%;
     .background-color {
        display:none;
     }
@@ -48,6 +54,13 @@ li{
     }
     .nav-link{
         font-size:8px;
+      }
+
+      ul{
+        padding-left: 0rem; 
+        position:relative;
+        margin-top:0rem;
+        width: 60%;
       }
 }
 
@@ -84,6 +97,7 @@ li{
 const Rightnav = ({ open }) => {
   return (
     <Ul open={open}>
+        <div className='background-color'></div>
         <ul className='list1'>
             <li>
               <NavLink 
@@ -136,7 +150,6 @@ const Rightnav = ({ open }) => {
             </li>
 
           </ul>
-          <div className='background-color'></div>
     </Ul>
   )
 }
