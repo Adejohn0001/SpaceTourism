@@ -10,6 +10,7 @@ top:15px;
 right:20px;
 z-index: 20;
 display: none;
+margin-top: 1.5rem;
 
 @media (max-width: 576px) {
     display: flex;
