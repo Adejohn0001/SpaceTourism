@@ -3,66 +3,10 @@ import Nav from "../Components/Nav";
 import DestNav from "../Components/DestNav.jsx";
 import '../Styles/Destination.css'
 import mars from "../assets/destination/image-mars.png";
-import styled from "styled-components";
-
-const StyledDest = styled.div`
-  background-color: aqua;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 170vh;
-  padding: 20px;
-  background-position: center;
-
-span {
-  color: aliceblue;
-  font-size: large;
-  font-weight: lighter;
-  text-transform: uppercase;
-  margin-left: 1rem;
-}
-.p1{
-  color: rgb(118, 118, 123);
-  padding: 3rem;
-  margin: 0 auto;
-  font-size: 20px;
-}
-.container02 {
-  display: flex;
-  flex-direction: column;
-}
-
-
-@media (min-width: 576px) {
-  .dest {
-      background-image: url("../assets/destination/background-destination-tablet.jpg");
-      padding: 20px 0px 20px 20px;
-      height: 200vh;
-  }
-}
-
-@media (min-width: 769px) {
-  .dest {
-      background-image: url("../assets/destination/background-destination-desktop.jpg");
-      height: 93.3vh;
-      background-size:cover;
-  }
-
-  .container02 {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      padding: 0px 50px 0px 200px;
-  }
-
-  .container03 {
-      width: 42.5%;
-  }
-}
-`
 
 const Destination = () => {
   return (
-    <StyledDest>
+    <div className="dest">
       <Nav />
 
       <div>
@@ -115,7 +59,7 @@ const Destination = () => {
           </div>
         </div>
       </div>
-    </StyledDest>
+    </div>
   );
 };
 
