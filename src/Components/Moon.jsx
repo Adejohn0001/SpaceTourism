@@ -6,7 +6,7 @@ import Nav from "../Components/Nav";
 
 const Moon = () => {
   return (
-    <div className="dest">
+    <div className="">
       <Nav />
 
       <div>

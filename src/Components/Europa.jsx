@@ -6,7 +6,7 @@ import '../Styles/Destination.css'
 
 const Europa = () => {
   return (
-    <div className="dest">
+    <div className="">
       <Nav />
 
       <div>
