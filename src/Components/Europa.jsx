@@ -2,11 +2,14 @@ import React from 'react'
 import europa from '../assets/destination/image-europa.png';
 import DestNav from './DestNav'
 import Nav from "../Components/Nav";
-import '../Styles/Destination.css'
+import styled from 'styled-components';
 
+const StyledEuropa = styled.div`
+background-image: url(${require(`../assets/destination/background-destination-mobile.jpg`)});
+`
 const Europa = () => {
   return (
-    <div className="">
+    <StyledEuropa>
       <Nav />
 
       <div>
@@ -59,7 +62,7 @@ const Europa = () => {
           </div>
         </div>
       </div>
-    </div>
+    </StyledEuropa>
   )
 }
 
