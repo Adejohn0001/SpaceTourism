@@ -16,7 +16,7 @@
 @media (min-width: 769px) {
     .home {
         background-image: url("../assets/home/background-home-desktop.jpg");
-        height: 90vh;
+        height: 93.3vh;
         background-size:auto;
     }
 }
