@@ -1,7 +1,6 @@
 import React from "react";
 import Nav from "../Components/Nav";
 import DestNav from "../Components/DestNav.jsx";
-import '../Styles/Destination.css'
 import mars from "../assets/destination/image-mars.png";
 import styled from "styled-components";
 
@@ -32,19 +31,15 @@ span {
 
 
 @media (min-width: 576px) {
-  .dest {
     background-image: url(${require(`../assets/destination/background-destination-tablet.jpg`)});
       padding: 20px 0px 20px 20px;
       height: 200vh;
-  }
 }
 
 @media (min-width: 769px) {
-  .dest {
     background-image: url(${require(`../assets/destination/background-destination-desktop.jpg`)});
       height: 93.3vh;
-      background-size:contain;
-  }
+      background-size:cover;
 
   .container02 {
       display: flex;
@@ -56,7 +51,7 @@ span {
   .container03 {
       width: 42.5%;
   }
-}
+};
 `
 
 const Destination = () => {

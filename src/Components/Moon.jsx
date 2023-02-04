@@ -1,12 +1,61 @@
 import React from 'react'
 import moon from '../assets/destination/image-moon.png'
 import DestNav from './DestNav'
-import '../Styles/Destination.css'
 import Nav from "../Components/Nav";
+import styled from 'styled-components';
+
+const StyledMoon = styled.div`
+background-image: url(${require(`../assets/destination/background-destination-mobile.jpg`)});
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 170vh;
+  padding: 20px;
+  background-position: center;
+span {
+  color: aliceblue;
+  font-size: large;
+  font-weight: lighter;
+  text-transform: uppercase;
+  margin-left: 1rem;
+}
+.p1{
+  color: rgb(118, 118, 123);
+  padding: 3rem;
+  margin: 0 auto;
+  font-size: 20px;
+}
+.container02 {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 576px) {
+  background-image: url(${require(`../assets/destination/background-destination-tablet.jpg`)});
+    padding: 20px 0px 20px 20px;
+    height: 200vh;
+}
+
+@media (min-width: 769px) {
+  background-image: url(${require(`../assets/destination/background-destination-desktop.jpg`)});
+    height: 93.3vh;
+    background-size:cover;
+
+.container02 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 50px 0px 200px;
+}
+
+.container03 {
+    width: 42.5%;
+}
+};
+`
 
 const Moon = () => {
   return (
-    <div className="">
+    <StyledMoon>
       <Nav />
 
       <div>
@@ -59,7 +108,7 @@ const Moon = () => {
           </div>
         </div>
       </div>
-    </div>
+    </StyledMoon>
   )
 }
 
