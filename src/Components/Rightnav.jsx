@@ -65,10 +65,17 @@ li{
     width:100%;
     justify-content: center;
     align-items: center;
+    padding: 0rem 0rem;
+    font-size: 30px;
     transition: transform 0.3s ease-in-out;
   }
   li {
     padding: 20px 0px;
+    font-size: 70px;
+    
+  }
+  .nav-link{
+    font-size:15px;
   }
 }
 `
