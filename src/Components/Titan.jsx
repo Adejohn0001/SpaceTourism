@@ -38,7 +38,7 @@ span {
     height: 200vh;
 
     span {
-      font-size: 20px
+      font-size: 20px;
     }
     .p1 {
       font-size: 20px;
