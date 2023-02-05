@@ -13,7 +13,7 @@ background-image: url(${require(`../assets/destination/background-destination-mo
   background-position: center;
 span {
   color: aliceblue;
-  font-size: large;
+  font-size: 15px;
   font-weight: lighter;
   text-transform: uppercase;
   margin-left: 1rem;
@@ -22,18 +22,29 @@ span {
   color: rgb(118, 118, 123);
   padding: 3rem;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 15px;
 }
 .container02 {
   display: flex;
   flex-direction: column;
+}
+.container01 {
+  margin-top:5rem;
 }
 
 @media (min-width: 576px) {
   background-image: url(${require(`../assets/destination/background-destination-tablet.jpg`)});
     padding: 20px 0px 20px 20px;
     height: 200vh;
+
+    span {
+      font-size: 20px
+    }
+    .p1 {
+      font-size: 20px;
+    }
 }
+
 
 @media (min-width: 769px) {
   background-image: url(${require(`../assets/destination/background-destination-desktop.jpg`)});
