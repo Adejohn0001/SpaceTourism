@@ -47,7 +47,7 @@ span {
 }
 .launch-imgM{
     width: 100%;
-    height:50vh;
+    height:35vh;
 }
 .tech-text1{
     font-size: 12px;
