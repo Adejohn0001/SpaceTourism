@@ -10,6 +10,9 @@ import Moon from './Components/Moon.jsx'
 import Europa from './Components/Europa';
 import Titan from './Components/Titan';
 import Crew from './Pages/Crew';
+import Technology from './Pages/Technology';
+import Capsule from './Components/Capsule';
+import Spacesport from './Components/Spacesport';
 
 function App() {
   return (
@@ -21,7 +24,9 @@ function App() {
          <Route exact path='/europa'element={<Europa />}></Route>
          <Route exact path='/titan'element={<Titan />}></Route>
          <Route exact path='/crew'element={<Crew />}></Route>
-
+         <Route exact path='/technology'element={<Technology />}></Route>
+         <Route exact path='/space-capsule'element={<Capsule />}></Route>
+         <Route exact path='/spaceport'element={<Spacesport />}></Route>
       </Routes>
     </Router>
   );
