@@ -9,7 +9,7 @@ const StyledCapsule = styled.div`
 background-image: url(${require(`../assets/technology/background-technology-mobile.jpg`)});
   background-repeat: no-repeat;
   background-size: cover;
-  height: 170vh;
+  height: 155vh;
   padding: 20px;
   background-position: center;
 span {
@@ -47,6 +47,7 @@ span {
 }
 .launch-imgM{
     width: 100%;
+    height:50vh;
 }
 .tech-text1{
     font-size: 12px;
