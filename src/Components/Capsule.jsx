@@ -19,6 +19,12 @@ span {
   text-transform: uppercase;
   margin-left: 1rem;
 }
+.first-nav {
+    display: none;
+}
+.second-nav {
+    margin-left: 1rem;
+}
 .p1{
   color: rgb(118, 118, 123);
   padding: 3rem;
@@ -82,6 +88,13 @@ span {
       .p1 {
         font-size: 20px;
       }
+      .second-nav {
+        margin-left: 1rem;
+        display: none;
+    }
+      .first-nav {
+        display: block;
+    }
 }
 
 @media (min-width: 769px) {
@@ -183,8 +196,11 @@ const Capsule = () => {
           </p>
         </div>
 
+        <div className='second-nav'>
+            <TechNav />
+        </div>
         <div className='tech-container1'>
-            <div>
+            <div className='first-nav'>
               <TechNav />
             </div>
 

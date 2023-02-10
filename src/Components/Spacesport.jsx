@@ -25,6 +25,12 @@ span {
   margin: 0 auto;
   font-size: 15px;
 }
+.first-nav {
+    display: none;
+}
+.second-nav {
+    margin-left: 1rem;
+}
 .container01{
     margin-top:5rem;
     padding-left: 0rem;
@@ -82,6 +88,13 @@ span {
       .p1 {
         font-size: 20px;
       }
+      .second-nav {
+        margin-left: 1rem;
+        display: none;
+    }
+      .first-nav {
+        display: block;
+    }
 }
 
 @media (min-width: 769px) {
@@ -184,8 +197,12 @@ const Spacesport = () => {
           </p>
         </div>
 
+        <div className='second-nav'>
+            <TechNav />
+        </div>
+
         <div className='tech-container1'>
-            <div>
+            <div className='first-nav'>
               <TechNav />
             </div>
 

@@ -18,7 +18,7 @@ const Hamburger = () => {
         setIsMenu(!isMenu)
     }
   return (
-    <div>
+    <div className='hamburger1'>
         <div onClick={updateMenu}>
            <img src={hamburger} alt="" srcset="" className={burger}/>
         </div> 
