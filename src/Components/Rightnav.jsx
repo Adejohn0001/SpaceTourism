@@ -99,7 +99,7 @@ const Rightnav = ({ open }) => {
     <Ul open={open}>
         <div className='background-color'></div>
         <ul className='list1'>
-            <li>
+            <li className='text-white'>
               <NavLink 
               exact
               to="/"
@@ -113,7 +113,7 @@ const Rightnav = ({ open }) => {
               </NavLink>
             </li>
 
-            <li>
+            <li className='text-white'>
               <NavLink to="/destination"
               activeClassName="active"
               className="nav-link"
@@ -125,7 +125,7 @@ const Rightnav = ({ open }) => {
               </NavLink>
             </li>
 
-            <li>
+            <li className='text-white'>
               <NavLink to="/crew"
               activeClassName="active"
               className="nav-link"
@@ -137,7 +137,7 @@ const Rightnav = ({ open }) => {
               </NavLink>
             </li>
 
-            <li>
+            <li className='text-white'>
               <NavLink to='/technology'
               activeClassName="active"
               className="nav-link"
